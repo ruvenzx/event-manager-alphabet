@@ -13,6 +13,9 @@ class CreateOrUpdateEvent(BaseModel):
     location: str
     venue: str
 
+class CreateSubscription(BaseModel):
+    email: str
+
 # Generic Response
 class ResponseSchema(BaseModel):
     detail: str

@@ -18,7 +18,7 @@ You will be able to:
 * **Delete Events** (_implemented_).
 """
 
-limiter = Limiter(key_func=get_remote_address, application_limits=["2/5seconds"])
+limiter = Limiter(key_func=get_remote_address, application_limits=["10/5seconds"])
 
 app = FastAPI(title="EventManager",
     description=description,

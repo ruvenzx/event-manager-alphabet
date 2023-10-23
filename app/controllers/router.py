@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from app.services.service import service
-from app.controllers.scheme import CreateOrUpdateEvent, ResponseSchema
+from app.services.subscriptions import subscriptionsService
+from app.controllers.scheme import CreateOrUpdateEvent, ResponseSchema, CreateSubscription
 from typing import Optional, List
 from .utils import ItemQueryParams
 
@@ -56,3 +57,9 @@ async def delete_event(ids: List[int]):
         raise HTTPException(status_code=404, detail="Item not found")
     else:
         return ResponseSchema(result=res, detail='Succesfully Deleted Data')
+    
+    
+@router.post("/${id}/subscribe")
+async def subscribe(id: str, sub: CreateSubscription):
+    res = await subscriptionsService.create_subscription(int(id), sub.email)
+    return ResponseSchema(result=res, detail='Succesfully Created Data')
