@@ -20,4 +20,6 @@ AlphaBet Backend Home Excercise
 
 
 ## Architecture
-![Arc](https://imageupload.io/ib/c6GYHsAxwE1C74w_1698057740.png)
+![Arc](https://imageupload.io/ib/4xex1RmX0lEgcmC_1698078703.png)
+
+### please note that api gw and sendgrid are not a part of the implementation as i would implement this thoroughly.
