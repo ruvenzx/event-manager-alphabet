@@ -15,3 +15,7 @@ AlphaBet Backend Home Excercise
 ## 3. Tests
 ### use pytest
 ### cd to folder and run 'pytest'
+
+
+## Architecture
+![Arc](https://imageupload.io/ib/c6GYHsAxwE1C74w_1698057740.png)
