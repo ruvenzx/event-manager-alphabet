@@ -40,7 +40,6 @@ async def startup():
         await database.connect()
     asyncio.create_task(runner.run_main())
 
-
 @app.on_event("shutdown")
 async def shutdown():
     if database.is_connected:

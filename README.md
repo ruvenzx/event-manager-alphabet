@@ -13,7 +13,9 @@ AlphaBet Backend Home Excercise
 
 
 ## 3. Tests
-### use pytest
+### NOTE: test do run locally and you should have postresql installed in order to run them.
+### install all requirements using pip
+### make sure you have a test db address in env var called: "DATABASE_URL" e.g: postgresql://user:pass@localhost:5432/db_name (in python's venv)
 ### cd to folder and run 'pytest'
 
 
